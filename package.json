@@ -1,0 +1,49 @@
+{
+  "name": "ts-lib-dual-format",
+  "version": "0.0.1",
+  "description": "A template repository for generating dual format (ESM & CJS) with TypeScript source.",
+  "keywords": [
+    "CJS",
+    "ESM",
+    "TypeScript"
+  ],
+  "author": "Thang Huu Vu <hi@thvu.dev>",
+  "type": "module",
+  "files": [
+    "*.js*",
+    "*.d.ts*",
+    "*.cjs*",
+    "*.d.cts*",
+    "lib",
+    "src",
+    "!tsconfig.json"
+  ],
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./lib": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "fs-extra": "^11.1.0",
+    "globby": "^13.1.3",
+    "prettier": "^2.8.4",
+    "tsup": "^6.6.3",
+    "tsx": "^3.12.5",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf lib index.js index.d.ts index.d.ts.map index.cjs index.d.cts index.d.cts.map",
+    "build": "pnpm clean && tsup && tsc && tsx scripts/copy-d-cts.ts"
+  }
+}

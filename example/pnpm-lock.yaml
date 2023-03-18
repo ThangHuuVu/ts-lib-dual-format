@@ -1,0 +1,15 @@
+lockfileVersion: 5.4
+
+specifiers:
+  ts-lib-dual-format: file:../ts-lib-dual-format-0.0.1.tgz
+
+dependencies:
+  ts-lib-dual-format: file:../ts-lib-dual-format-0.0.1.tgz
+
+packages:
+
+  file:../ts-lib-dual-format-0.0.1.tgz:
+    resolution: {integrity: sha512-DtYZTCa0f50k91rd7CRhlzhgHPY2OaYyghp8T2OAm3tKVRL8mj887HSqewVv+064S/12PAv4oMQR/oRZKxed+g==, tarball: file:../ts-lib-dual-format-0.0.1.tgz}
+    name: ts-lib-dual-format
+    version: 0.0.1
+    dev: false

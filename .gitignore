@@ -1,0 +1,11 @@
+*.js
+*.cjs
+*.js*
+*.cjs*
+*.d.ts*
+*.d.cts*
+node_modules
+*.tgz
+!example/index.mjs
+!example/index.cjs
+!.eslintrc.cjs

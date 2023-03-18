@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "node ./index.mjs && node ./index.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-lib-dual-format": "file:../ts-lib-dual-format-0.0.1.tgz"
+  }
+}
