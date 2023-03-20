@@ -20,7 +20,6 @@ export default defineConfig([
       compilerOptions: {
         target: "ES5",
         module: "commonjs",
-        moduleResolution: "node",
       },
     },
   },
